@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunaLace</title>
+    <link rel="stylesheet" type="text/css" href="cloths.css">
+    </head>
+
+<body>
+    
+
+    <header>
+        <nav>
+            <h1 onclick="location.href='#home'; showPopup()">LunaLace</h1>
+            
+                <a href="#home">Home</a>
+                
+            <div class="dropdown">
+                <a href="#products">Products</a>
+                <div class="dropdown-content">
+                    <a href="#men">Men</a>
+                    <a href="#women">Women</a>
+                    <a href="#kids">Kids</a>
+                </div>
+            </div>
+            <a href="#contact">Contact</a>
+            <a href="login.html" target="_blank">Login</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <!-- Home Page Content with Background Video -->
+        <video autoplay muted loop>
+            <source src="home.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="men">
+        <!-- Men's Collection Content -->
+        <h2>Men's Collection</h2>
+        <div class="product-container" id="men-products">
+            <!-- men items -->
+            <div class="product">
+                <img src="m1.jpg" alt="Product Image" style="width: 200px; height: 150px;">
+
+
+                <h3>Item 1</h3>
+                <p>Price: $19.99</p>
+                <p>Description:<b> Brown Shirt.</b>b></p>
+            </div>
+            
+
+            <div class="product">
+                <img src="m2.jpg" alt="Product Image" style="width: 200px; height: 150px;">
+                <h3>Item 10</h3>
+                <p>Price: $29.99</p>
+                <p>Description:<b> Black Shirt.</b></p>
+            </div>
+            
+        </div>
+
+        <!-- Load more button -->
+        <button id="load-more-btn" onclick="loadMoreItems()">Load More</button>
+    </section>
+    <section id="women">
+        <h2>Women's Collection</h2>
+        
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="w1.jpg" alt="Product 1" style="width: 200px; height: 150px;">
+                <h3>Product 1</h3>
+                <p>Price: $20</p>
+                <p>Description: <b>green dress</b></p>
+            </div>
+    
+            <div class="product">
+                <img src="w2.jpg" alt="Product 10" style="width: 200px; height: 150px;">
+                <h3>Shirt</h3>
+                <p>Price: $30</p>
+                <p>Sky blue.</p>
+            </div>
+        </div>
+    
+         <!-- Load more button -->
+         <button id="load-more-btn" onclick="loadMoreItems()">Load More</button>
+        </section>
+    
+
+        <section id="kids">
+            <h2>Kids Collection</h2>
+            
+            <div class="products">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="k1.jpg" alt="Product 1" style="width: 200px; height: 150px;">
+                    <h3>Product 1</h3>
+                    <p>Price: $15</p>
+                    <p>Description:<b>Sky blue dress</b></p>
+                </div>
+        
+               
+        
+                <!-- Product 10 -->
+                <div class="product">
+                    <img src="k2.jpg" alt="Product 10" style="width: 200px; height: 150px;">
+                    <h3>Product 10</h3>
+                    <p>Price: $25</p>
+                    <p>Description:<b>Wite dress</b>.</p>
+                </div>
+            </div>
+        
+            <!-- Load More Button -->
+            <button id="load-more-btn" onclick="loadMoreItems()">Load More</button>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+        
+            <form action="#" method="post" id="contactForm">
+                <!-- Name Row -->
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <!-- Email Row -->
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <!-- Message Row -->
+                <div class="form-row-large">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+        
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+
+    
+        <footer>
+            <p>&copy; 2023 LunaLace. All Rights Reserved</p>
+        </footer>
+        <script src="cloths.js"></script>
+
+    </body>
+
+</html>
